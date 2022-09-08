@@ -1,5 +1,5 @@
 server:
-  port: 9003
+  port: 6002
   shutdown: graceful
   netty:
     connection-timeout: 2s
@@ -27,7 +27,7 @@ eureka:
   registerWithEureka: true
   fetchRegistry: true
   serviceUrl:
-   defaultZone: http://localhost:8070/eureka/ 
+   defaultZone: http://host.docker.internal:8070/eureka/ 
      
       
  
